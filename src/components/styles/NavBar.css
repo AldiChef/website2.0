@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.hamburger{
+    display: none;
+}
+
+.navBarContent{
+    width: 100%;
+    max-width: 1920px;
+    height: 144px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+.nameTextArea{
+    height: 48px;
+    width: 280px;
+    display: flex;
+    margin-right: auto;
+    margin-left: 144px;
+    align-items: center;
+    justify-content: center;
+}
+
+.nameTextArea p{
+    font-size: 2.9rem;
+    font-style: bold;
+    color: white;
+}
+
+nav{
+    margin-right: 144px;
+}
+
+.nav-ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-ul li{
+    display: inline-flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    margin: 0 25px;
+}
+
+.nav-ul li a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-ul li a{
+    margin-left: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.9rem;
+}
+.nav-ul li img{
+    width: 48px;
+    height: 48px;
+}
+
+.hamburger-nav{
+    display: none;
+}
+
+@media only screen and (max-width: 1400px) {
+    .nameTextArea{
+        margin-left: 50px;
+    }
+
+    nav{
+        margin-right: 50px;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+
+    .navBarContent{
+        justify-content: center;
+    }
+    .nameTextArea{
+        display: none;
+    }
+
+    nav ul li:nth-child(4){
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+
+    .navBarContent{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 70px;
+    }
+
+    .nameTextArea{
+        display: flex;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .hamburger-nav{
+        margin: 0;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .hamburger-nav ul{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    .hamburger-nav ul li{
+        margin: 0;
+    }
+
+    .hamburger-nav.show{
+        display: flex;
+    }
+
+    .hamburger{
+        margin-right: 20px;
+        display: block;
+        height: 42px;
+        width: 50px;
+        background-color: transparent;
+        border: 0;
+        color: white;
+        font-size: 2.5rem;
+        cursor: pointer;
+    }
+
+    .hamburger:hover{
+        outline: none;
+        border: 3px white;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .nameTextArea{
+        display: none;
+    }
+}
+

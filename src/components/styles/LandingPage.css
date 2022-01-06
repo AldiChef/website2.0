@@ -1,0 +1,377 @@
+
+
+.root{
+    height: auto;
+    width: 100%;
+    background-color: #1B262C;
+    display: flex;
+    justify-content: center;
+}
+
+.pageContent{
+    height: 100%;
+    width: 100%;
+    max-width: 1920px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divider{
+    border: 3px   solid #0F4C75;
+    box-sizing: border-box;
+    border-radius: 20px;
+    height: 100%;
+}
+
+.buttons{
+    display: flex;
+    margin-top: 12px;
+}
+
+
+
+.welcomeContent{
+    width: 100%;
+    height: 60vh;
+    max-height: 650px;
+    min-height: 300px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats{
+    margin-top: 40px;
+    width: 80%;
+    height: 112px;
+    background-color: #0f4c753a;
+    border-radius: 56px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;margin-bottom: 20px;
+}
+
+.statsLeft{
+    border-radius: 56px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+
+.statsDivider{
+    border: 3px   solid #0F4C75;
+    box-sizing: border-box;
+    border-radius: 20px;
+    height: 80%;
+}
+
+.statsRight{
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+
+.statisticLeft:nth-child(1){
+    border-radius: 56px 0px 0px 56px;
+}
+
+.statisticRight:nth-child(2){
+    border-radius: 0px 56px 56px 0px;
+}
+
+.statisticLeft{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.statisticLeft .statIcon{
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+    background-color: #0F4C75;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.statisticLeft p{
+    font-size: 25px;
+    line-height: 30px;
+    color: white;
+    font-weight: 400;
+}
+
+.statisticLeft p mark{
+    font-size: 45px;
+}
+
+.statisticLeft .statIcon img{
+    height: 55px;
+    width: 55px;
+}
+
+.statisticRight{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.statisticRight .statIcon{
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+    background-color: #0F4C75;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.statisticRight p{
+    font-size: 25px;
+    line-height: 30px;
+    color: white;
+    font-weight: 400;
+}
+
+.statisticRight p mark{
+    font-size: 45px;
+}
+
+.statisticRight .statIcon img{
+    height: 55px;
+    width: 55px;
+}
+
+
+.right{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+}
+
+
+.right .heading{
+    padding-left: 20px;
+    padding-right: 20px;
+    letter-spacing: 5,5%;
+    color: white;
+    line-height: 40px;
+    font-size: 39px;
+    font-weight: 400;
+}
+
+.primary{
+    background-color: transparent;
+    color: #FC997C;
+    font-weight: 500;
+}
+
+.right .subheading{
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 500px;
+    margin-top: 10px;
+    color: #BEBCBC;
+    font-size: 20px;
+    letter-spacing: 7,5%;
+    text-align: center;
+}
+
+.buttons .bewerbenButton{
+    margin-right: 10px;
+    background-color: #0F4C75;
+    color: white;
+    border: none;
+    width: 146px;
+    height: 48px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+
+.buttons .shopButton{
+    background-color: #0F4C75;
+    color: white;
+    border: none;
+    width: 146px;
+    height: 48px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+
+.left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left img{
+    object-fit: cover;
+    width: 70%;
+    height: auto;
+    max-width: 350px;
+    max-height: 350px;
+}
+
+
+@media only screen and (max-width: 1250px) {
+    .stats{
+        height: auto;
+        padding: 15px;
+    }
+
+    .statsLeft{
+        flex-direction: column;
+        
+    }
+
+    .statisticLeft:nth-child(1){
+        margin-bottom: 10px;
+    }
+
+    .statisticLeft{
+        width: 100%;
+    }
+
+    .statsRight{
+        flex-direction: column;
+        
+    }
+
+    .statsDivider{
+        display: none;
+    }
+
+    .statisticRight:nth-child(1){
+        margin-bottom: 10px;
+    }
+
+    .statisticRight{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .stats{
+        height: auto;
+        padding: 15px;
+        flex-direction: column;
+    }
+
+    .statsLeft{
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .statisticLeft:nth-child(1){
+        margin-bottom: 10px;
+    }
+
+    .statisticLeft{
+        width: 100%;
+    }
+
+    .statsRight{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .statisticRight:nth-child(1){
+        margin-bottom: 10px;
+    }
+
+    .statisticRight{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .right .heading{
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .right .subheading{
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .pageContent{
+        flex-direction: column;
+    }
+    .welcomeContent{
+        display: inline-flex;
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    .divider{
+        display: none;
+        border: 3px   solid #0F4C75;
+        box-sizing: border-box;
+        border-radius: 20px;
+        width: 100%;
+        height: 0px;
+        margin-bottom: 50px;
+    }
+
+    .right{
+        margin-top: 25px;
+        height: auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    .left{
+        display: none;
+        width: 50%;
+    }
+
+    .right .subheading{
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    .right .heading{
+        margin: 0;
+    }
+    .buttons{
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .buttons {
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .buttons .bewerbenButton{
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+
+}
+

@@ -1,0 +1,151 @@
+.section{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    color: #FC997C;
+    font-size: 60px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.infoContent{
+    width: 67%;
+    max-width: 1482px;
+    height: 750px;
+    background-color: rgba(50, 130, 184, 0.15);
+    margin-bottom: 20px;
+    border-radius: 45px;
+    display: flex;
+    flex-direction: column;
+}
+
+.top, .bottom{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content1{
+    border-top-left-radius: 45px;
+}
+
+.content2{
+    border-top-right-radius: 45px;
+}
+
+.content3{
+    border-bottom-left-radius: 45px;
+}
+
+.content4{
+    border-bottom-right-radius: 45px;
+}
+
+.content{
+    width: 50%;
+    height: 100%;
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contentTitle{
+    font-size: 23px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.contentSubTitle{
+    font-size: 20px;
+    color: #BEBCBC;
+    max-width: 430px;
+}
+
+.contentButton{
+    height: 48px;
+    width: 130px;
+    display: flex;
+    color: white;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: #0F4C75;
+    border: none;
+    border-radius: 24px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1450px) {
+    .infoContent{
+        height: 650px;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .infoContent{
+        height: auto;
+    }
+
+    .top, .bottom{
+        flex-direction: column;
+
+    }
+
+    .content{
+        width: 100%;
+    }
+    .content1{
+        margin-top: 30px;
+    }
+
+    .content{
+        margin-bottom: 30px;
+    }
+
+    .contentTitle{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .contentSubTitle{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+}
+
+@media only screen and (max-width: 750px) {
+    .infoContent{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .title{
+        font-size: 45px;
+    }
+
+}
+
+@media only screen and (max-width: 575px) {
+    .contentSubTitle{
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,173 @@
+.impressumWrapper{
+    width: 100%;
+    min-height: calc(100vh - 360px - 144px);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.overWrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ipressumArea{
+    width: 100%;
+    height: auto;
+    max-width: 1920px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.impressumTitle{
+    color: #FC997C;
+    font-size: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.impressumContent{
+    width: 67%;
+    max-width: 1482px;
+    height: 700px;
+    background-color: rgba(50, 130, 184, 0.15);
+    margin-bottom: 30px;
+    border-radius: 45px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.sectionLeft{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inhaber, .support, .kontakt{
+    width: 50%;
+    min-width: 336px;
+    margin: 15px;
+}
+
+
+.sectionTitle{
+    color: white;
+    font-size: 40px;
+    width: 100%;
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+
+.one, .two{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 10px;
+    margin-left: 25px;
+}
+
+
+.one img, 
+.two img{
+    width: 44px;
+    height: 46px;
+}
+
+.imageSubTitle{
+    color: white;
+    font-size: 20px;
+}
+
+.subTitle{
+    font-size: 20px;
+    color: white;
+    margin: 5px;
+    margin-left: 25px;
+}
+
+.sectionRight{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightImage{
+    object-fit: cover;
+    width: 70%;
+    height: auto;
+    max-width: 350px;
+    max-height: 350px;
+}
+
+.subTitle a{
+    color: white;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 1250px) {
+    .sectionRight{
+        display: none;
+    }
+
+    .sectionLeft{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .impressumContent{
+        width: 90%;
+        max-width: none;
+        min-width: none;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .impressumContent{
+        width: auto;
+        height: auto;
+    }
+
+    .sectionTitle{
+        font-size: 30px;
+    }
+
+    .subTitle, .imageSubTitle{
+        font-size: 15px;
+        
+    }
+
+    .inhaber{
+        margin-top: 30px;
+    }
+
+    .kontakt{
+        margin-bottom: 30px;
+    }
+
+    .inhaber, .support, .kontakt{
+        width: auto;
+        min-width: 0;
+        width: 100%;
+
+    }
+
+    .sectionLeft{
+        align-items: center;
+        justify-content: center;
+    }
+}
